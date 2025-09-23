@@ -1,0 +1,11 @@
+sizes = ['0-0 months (19,7 ")', '0-1 months (10 cm)', '0-1 months (22,0 ")', '0-1 years (18,9 ")', '0-3 months', '1 years (17-19)', '1-2 years (20-22)', '1-2 years (92 cm)', '1-3 months (24,4 ")', '1-3 years (19,7 ")', '1-6 months (11 cm)', '1/2 years (35 ")', '10 years (140 cm)', '10 years (55,1 ")', '10-12 years (146 cm)', '10-12 years (34-36)', '10-14 years (140-164 cm)', '10-14 years (22,0 ")', '10-14 years (7,1 ")', '11-12 years (152 cm)', '11-12 years (59,8 ")', '11-12 years (59,84 ")', '11/12 years (148 cm)', '12-14 years (164 cm)', '12-14 years (37-40)', '12-18 months', '12-18 months (13 cm)', '12-18 months (33,9 ")', '12-24 months (20-22)', '12-24 months (92 cm)', '12/13 years (156 cm)', '13-14 years (164 cm)', '13-14 years (64,57 ")', '13-14 years (64,6 ")', '13/14 years (164 cm)', '18-24 months (36,2 ")', '1½ years (33,9 ")', '2 years (36,2 ")', '2-3 years (38,6 ")', '2-4 years (23-25)', '2-4 years (98 cm)', '2/3 years (38,58 ")', '3 years (38,6 ")', '3-4 years (40,9 ")', '3-6 months', '3-6 months (26,8 ")', '3-6 years (104-110 cm)', '3-6 years (20,5 ")', '3-6 years (5,1 ")', '4 years (40,9 ")', '4-5 years (43,3 ")', '4-6 years (110 cm)', '4-6 years (26-28)', '4/5 years (42,12 ")', '5 years (43,3 ")', '5-6 years (45,2 ")', '5/6 years (45,66 ")', '6 years (116 cm)', '6 years (45,2 ")', '6 years (45,3 ")', '6 years (45,7 ")', '6-12 months', '6-12 months (12 cm)', '6-12 months (80 cm)', '6-7 years (120 cm)', '6-7 years (122 cm)', '6-7 years (47,24 ")', '6-8 years (120 cm)', '6-8 years (28-30)', '6-9 months (29,1 ")', '6-9 years (116-134 cm)', '6-9 years (21,3 ")', '6-9 years (5,9 ")', '6/7 years (122 cm)', '7 years (122 cm)', '7 years (48,0 ")', '7-8 years (128 cm)', '8 years (128 cm)', '8 years (50,4 ")', '8-10 years (130 cm)', '8-10 years (31-33)', '8-9 years (130 cm)', '8-9 years (134 cm)', '8-9 years (51,18 ")', '8/9 years (131 cm)', '9 years (134 cm)', '9 years (52,8 ")', '9-10 years (140 cm)', '9-10 years (55,12 ")', '9-12 months (31,5 ")', '9/10 years (140 cm)', 'L (12-14 years)', 'M (9-11 years)', 'S (6-9 years)']
+
+new_sizes = []
+
+for size in sizes:
+    if '(' in size:
+        size = size.split('(')[0].strip()
+        if 'months' in size or 'years' in size:
+            new_sizes.append(size)
+
+print(new_sizes)
