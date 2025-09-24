@@ -1,0 +1,68 @@
+{
+  "_id": {
+    "$oid": "68cd4d60c8da01121ea73766"
+  },
+  "product_id": "lew10278436012196",
+  "gender": "female",
+  "age_group": [
+    "adult"
+  ],
+  "age_range": [
+    "18y"
+  ],
+  "date_of_scraping": {
+    "$date": "2025-09-18T00:00:00.000Z"
+  },
+  "url": "https://lewkin.com/en-kr/products/chic-two-way-ribbon-blouse-cg521?variant=51104737984676",
+  "title": "chic two-way ribbon blouse cg521",
+  "description": "Stretchability:No | Thickness:Moderate | Transparency:Opaque | Lining:No | Fit Guide:True to size | Style : Romantic, Feminine | Occasion : Work wear, Graduation, Back to school | Print : Solid | Sleeve : Long sleeve | Neck : V neck | Fit : Normal fit | Color : Black, Brown, White",
+  "product_ref_code": "10278436012196",
+  "color_id": "lew10278436012196%51104737984676",
+  "color_name": "white",
+  "color_ref_code": {
+    "$numberLong": "51104737984676"
+  },
+  "sku": "lew10278436012196%plew10278436012196c51104737984676sM",
+  "size_name": "M",
+  "size_ref_code": null,
+  "price": 65000,
+  "launch_price": 65000,
+  "availability": "in_stock",
+  "demand": null,
+  "composition": "Cotton 100%",
+  "images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0600/4493/5332/files/001_white_c8b8189b-e4e1-4049-9fb6-b979333d7f9a.webp?v=1755667774",
+      "image_style": "n_f_f_c"
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0600/4493/5332/files/002_e589bc2f-ba13-4d28-bf7f-7007fb574507.webp?v=1755667774",
+      "image_style": "s0"
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0600/4493/5332/files/003_322963c8-97ee-4d12-a19a-be8dace6ea74.webp?v=1755668261",
+      "image_style": "s0"
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0600/4493/5332/files/004_df778f9c-8294-4d1f-b8ef-7053a6d6553a.webp?v=1755668261",
+      "image_style": "s0"
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0600/4493/5332/files/005_dea00022-4415-4af0-8bce-a67a33d2f0e4.webp?v=1755668261",
+      "image_style": "s0"
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0600/4493/5332/files/006_71f9c3b4-6d21-48df-8664-80bf2484a3b0.webp?v=1755668261",
+      "image_style": "s0"
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0600/4493/5332/files/007_fd1e45fa-a996-4d4e-ba38-409883025003.webp?v=1755668261",
+      "image_style": "s0"
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0600/4493/5332/files/008_61b27bd1-840f-4cab-9180-44ad302fc2e0.webp?v=1755668261",
+      "image_style": "s0"
+    }
+  ],
+  "origin": null
+}

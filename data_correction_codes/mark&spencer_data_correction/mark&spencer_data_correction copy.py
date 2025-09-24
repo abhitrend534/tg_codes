@@ -16,13 +16,13 @@ for country in countries:
     # Prepare bulk operations
     operations = []
 
-    # replace '_' with '' in color_id
-    for doc in collection.find({"color_id": {"$regex": "_"}}):
-        new_color_id = doc['color_id'].replace('_', '')
+    # replace '_' with '' in sku
+    for doc in collection.find({"sku": {"$regex": "_"}}):
+        new_sku = doc['sku'].replace('_', '').split('(')[0].strip().replace(' ', '_')
         operations.append(
             UpdateMany(
                 {'_id': doc['_id']},
-                {'$set': {'color_id': new_color_id}}
+                {'$set': {'sku': new_sku}}
             )
         )
 

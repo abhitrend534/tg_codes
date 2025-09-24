@@ -1,4 +1,3 @@
-import json
 from pymongo import MongoClient
 
 # MongoDB connection details
@@ -11,20 +10,16 @@ db = client[database_name]
 
 temp = {}
 
-countries = ['india', 'uk', 'usa']
+countries = ['india']
 for country in countries:
     collection_name = f'crawler_sink_marknspencer_{country}'
     collection = db[collection_name]
 
     # Retrieve unique values for the key field
-    unique_pids = collection.distinct('product_id')
+    unique_origins = collection.distinct('origin')
 
-    temp[country] = unique_pids
+    print(f"Country: {country}, Unique Origins: {unique_origins}")
 
-# Save the results to a JSON file
-path = 'unique_pids.json'
-with open(path, 'w') as f:
-    json.dump(temp, f, indent=4)
 
 # Close the connection
 client.close()
