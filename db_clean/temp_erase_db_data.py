@@ -10,7 +10,7 @@ db = client[database_name]
 
 collection_names = db.list_collection_names()
 
-brand = '_lewkin'
+brand = '_next'
 
 for collection_name in collection_names:
     if 'v3' in collection_name and '_images_download' not in collection_name and brand in collection_name and collection_name not in [f'v3_products{brand}', f'v3_colors{brand}']:

@@ -1,7 +1,7 @@
 from pymongo import MongoClient
 
 # MongoDB connection details
-connection_string = "mongodb://root:iK&dsCaTio976fghI*(bgdskk)~@3.1.227.250:28018/tg_analytics?authSource=admin"
+connection_string = "mongodb://localhost:27017/"
 database_name = 'tg_analytics'
 
 # Connect to MongoDB
@@ -12,7 +12,7 @@ temp = {}
 
 countries = ['india']
 for country in countries:
-    collection_name = f'crawler_sink_marknspencer_{country}'
+    collection_name = f'crawler_sink_marknspencer_group_{country}'
     collection = db[collection_name]
 
     # Retrieve unique values for the key field
